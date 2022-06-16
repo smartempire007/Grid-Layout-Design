@@ -1,0 +1,55 @@
+:root {
+    --orange: linear-gradient(to bottom right, #FF61D2, #FE9090);
+    --yellow: linear-gradient(to bottom right, #FD8451, #FFBD6F);
+    --green: linear-gradient(to bottom right, #478C76 , #8ACE90);
+    --blue : linear-gradient(to bottom right, #06AFEC , #7FD6FB);
+    --background: linear-gradient(to bottom right, #1E2A78 , #FF2E4C);
+
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: var(--background);
+     min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 100px 100px 200px;
+    grid-template-rows: 180px 90px 110px;
+    grid-gap: 10px;
+    padding: 10px;
+    margin-top: 7%;
+    justify-content: center;
+    grid-template-areas: 
+        "item1 item1 item1 item2"
+        "item3 item3 item4 item4"
+        "item3 item3 item5 item5";
+}
+
+.item1 {
+    grid-area: item1;
+    background-image: var(--orange);
+}
+
+.item2 {
+    grid-area: item2;
+    background-image: var(--yellow);
+}
+.item3 {
+    grid-area: item3;
+    background-image: var(--green);
+}
+.item4 {
+    grid-area: item4;
+    background-image: var(--blue);
+}
+.item5 {
+    grid-area: item5;
+    background-image: var(--blue);
+}
